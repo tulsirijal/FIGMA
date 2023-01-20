@@ -4,23 +4,25 @@
     padding: 0;
     
 }
+
 #navigation {
-    margin-left: 113px;
-    margin-right: 73px;
-    margin-top: 48px;
+    margin: 20px auto;
+    max-width: 1200px;
+
 }
-
-
+body::-webkit-scrollbar {
+ display: none;
+}
+.logo {
+    width: 50%;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
    
 }
-img {
-    height: 52px;
-    width: 68px;
-}
+
 .nav-items a{
     text-decoration: none;
     display: inline;
@@ -29,7 +31,6 @@ img {
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
     color: #777C85;
 }
@@ -49,41 +50,32 @@ img {
 
 }
 /* main-section */
-.container {
-    max-width: 100%;
-    display: flex;
-    margin-left: 113px;
-    margin-right: 73px;
-    margin-top: 152px;
-    margin-bottom: 120px;
-    gap: 100px;
- 
+#main {
+    max-width: 1200px;
+    margin: 100px auto;
+   
 }
+.container {
+    display: flex;
+    gap: 50px;
+   
+}
+
 
 .second-container {
-    /* max-width: 100%; */
     display: flex;
-    margin-left: 113px;
-    margin-right: 73px;
-    margin-top: 152px;
-    gap: 170px;
-    align-items: center;
-   
-
+    margin-top: 150px;
+    gap: 50px;
 }
 
-hr {
-    width: 280px;
+.heading-hr {
+    max-width: 280px;
     background-color: #00000080;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.main-description {
-    width: 60%;
-    /* align-self: flex-start; */
-   
-}
+
  h1 {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 36px;
@@ -98,33 +90,18 @@ p {
     
     text-align: left;
     color: #777C85;
+} 
+.img{
+    width: 38%;
 }
-.image img{
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-    align-self: center;
-   
-}
-.second-image img {
-    width:467px ;
-    height: auto;
-}
-.second-description {
-    max-width: 100%;
-    
-}
+
+
 /* Footer  */
-footer hr {
-    width: 100%;
-    background-color: #00000080;
-    margin-top: 126px;
-}
+
 .footer-container {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    
     margin-left:80px ;
     margin-right: 70px;
     margin-top: 85px;
@@ -136,6 +113,9 @@ footer hr {
     line-height: 32px;
     color: #777C85;
    
+}
+.footer-logo {
+    width: 30%;
 }
 .contact-us {
     width: 185px;
@@ -188,157 +168,60 @@ h3 {
 .fa-facebook:hover {
     color: #4E5DC0;
 }
-
 /* media queries */
 
-@media (max-width:1200px) {
-    .container {
-        gap: 50px;
+@media (max-width:1220px) {
+    #main {
+        margin: 20px 16px;
     }
-    
-    
-    p {
-        font-family: 'Raleway';
-        font-size: .9rem;
-        font-weight: 200;
-        line-height: 28px;
-        
-        text-align: left;
-        color: #777C85;
-    }
-    .second-container {
-        margin-left: 90px;
-        margin-right: 100px;
-        gap: 100px;
+    #navigation {
+      margin: 20px 10px;
     }
 }
-
 @media (max-width:950px) {
-    .image img {
-        width: 110%;
-        margin-top: 50px;
-    }
+   
     .footer-container {
        margin-top: 10px;
     }
     .footer-container p, .list li {
         font-size: .85rem;
     }
-    .second-description {
-        width: 75%;
-    }
-    .second-image img {
-        width: 115%;
-    }
-}
-@media (max-width:850px) {
-    .second-image img{
-        width: 130%;
-        margin-top: 2.5rem;
-        
-    }
+
     p {
         font-family: 'Raleway';
-        font-size: .75rem;
-        font-weight: 200;
-        line-height: 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 30px;
         
         text-align: left;
         color: #777C85;
     }
     .footer-container {
-        margin-left: 1rem;
-        margin-right: .5rem;
+        margin-left: 0px;
+        margin-right: 0px;
     }
-    .nav-items a {
-        text-decoration: none;
-        display: inline;
-        margin-right:10px;
-        font-family: 'Raleway';
-        font-size: .75rem;
-        font-weight: 200;
-        line-height: 10px;
-        color: #777C85;
-    }
-    .nav-btn {
-        width:100px;
-        height: 40px;
-        font-size: .75rem;
-        
-        
-    }
-    img {
-        width: 50px;
-        height: 40px;
-    }
-    footer hr {
-        margin-top: 2rem;
-    }
-    .second-description {
-        margin-top: 3rem;
-        margin-left: 1rem;
-    }
+   
 }
-@media (max-width:770px) {
-    #navigation {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 48px;
-    }
-    .container {
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-    }
-    .second-container {
-        margin-left:2rem;
-        margin-top: 0rem;
-    }
-     img {
-        width: 50px;
-        height: 40px;
-    }
-    .address {
-        margin-bottom: 10px;
-    }
-    a {
-        text-decoration: none;
-        font-size: .75rem;
-    }
-    .main-description {
-        width: 100%;
-        
-    }
-}
-@media  (max-width:700px) {
+@media (max-width:800px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
-        margin-top:2rem;
-        
     }
     .second-container {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        margin-top: .5rem;
-        
+        margin-top: 70px;
     }
-    .second-description {
-        align-self: flex-start;
+    .img {
+        width: 60%;
     }
-    .image img {
-        width: 70%;
-        align-items: center;
-    }
-    .second-image img {
-        width: 70%;
-        
-    }
-    p {
-        font-size: .9rem;
-    }
+
+    
 }
-@media  (max-width:620px) {
+@media (max-width:650px) {
+    .nav-items a {
+        display: none;
+    }
     .footer-container p {
         font-size: .75rem;
     }
@@ -351,47 +234,7 @@ h3 {
     .social-media {
         margin-top: 8rem;
     }
-    .container {
-        margin-top: 2rem;
+    .privacy {
+        font-size: .5rem;
     }
 }
-@media  (max-width:460px) {
-    .nav-items {
-        opacity: 0;
-
-    }
-    #navigation {
-      margin-right: 10px;
-      
-    }
-    .nav-btn {
-        width: 100%;
-        margin-left: 100px;
-        
-    }
-    .image img {
-        width: 100%;
-    }
-    .second-image img {
-        width: 100%;
-    }
-    .second-description {
-        width: 100%;
-    }
-    .container , .second-container {
-        margin-left:1.5rem;
-    }
-    .footer-container {
-        margin-left: 0rem;
-        margin-right: 0rem;
-        place-items: start;
-        gap: 1.3rem;
-    }
-    #navigation {
-        margin-top: 1rem;
-    }
-       
-    
-
-}
-
